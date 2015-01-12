@@ -1,7 +1,7 @@
 {% load staticfiles %}
 <html>
   <head>
-    <title>OpenTainer</title>
+    <title>OpenTainer{% block title %}{% endblock %}</title>
     <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet">
   </head>
   <body>
@@ -12,9 +12,9 @@
       <div class="navbar-collapse collapse navbar-inverse-collapse">
         <ul class="nav navbar-nav">
           <li><a href="{% url 'home' %}">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Documentation</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="{% url 'about_us' %}">About Us</a></li>
+          <li><a href="{% url 'documentation' %}">Documentation</a></li>
+          <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
         </ul>
       </div>
     </div>
