@@ -10,6 +10,3 @@ def contact_us(request):
 
 def about_us(request):
     return render(request, 'home/about_us.html', {})
-
-def documentation(request):
-    return render(request, 'home/documentation.html', {})

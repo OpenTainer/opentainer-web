@@ -86,3 +86,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
 	os.path.join(BASE_DIR, "static"),
 )
+DOCS_ROOT = os.path.join(BASE_DIR, 'docs/_build/html')
